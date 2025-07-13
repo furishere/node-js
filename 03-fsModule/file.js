@@ -22,7 +22,7 @@ fs.readFile("./contact.txt", "utf-8",(err, result) => {
     }
 })
 
-// it will log the data again again - different from write file
+// it will log the data again again without deleting the existing content - different from write file
 fs.appendFileSync("./test.txt", `hey there\n`)
 
 // to copy the file
