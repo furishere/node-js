@@ -29,4 +29,28 @@ Once the work is finished, the result is sent back to the Event Loop, which then
 "version": "1.0.0"
 ```
 ### Rest APi
-- JSONt
+- JSON format 
+
+### Middleware
+- client did get request then express server will send response 
+- client - middleware - server
+- first request will go to middleware (middleware is just a function), then middleware do process then check eveything whether is it hacker or not or another shit if eveything is fine then middleware send request to server if middleware feels anythin is wrong then he will return the request it will not go further to get respone and it will end the request and respone circle
+
+- - When a client sends a GET request, the Express server sends back a response.
+- Flow: Client → Middleware → Server → Response
+- Middleware is essentially a function that runs before the request reaches the route handler.
+- The middleware processes the request and performs tasks such as:
+- - Logging, Authentication, Authorization, Input validation, Security checks (e.g. blocking potential attacks)
+- If everything is okay, the middleware calls next() to pass control to the next middleware or the route handler.
+- If the middleware detects an issue (e.g. suspicious activity), it can:
+- End the request-response cycle early using res.send(), res.status().json(), etc.
+- Not call next(), which prevents the request from reaching the actual route.
+- In summary, middleware acts like a gatekeeper between the client and the server logic.
+
+### HTTP Headers
+- there's addition information (meta data ) or address in headers
+- header is extra information which tells about request and respone 
+![alt text](image.png)
+
+### Status Code
+1. information respone 
