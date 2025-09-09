@@ -4,6 +4,7 @@
 - `npm init` to intialze and make package.json file, `npm run start`to run specific script file
 - Js only execute in browser
 - with require method we can import
+- `npm i nodemon` - `nodemon index.js` use nodemon to avoid restart server it will save eveything in after changes
 
 ### Architecture
 - Whenever a client sends a request, it goes into the Event Queue.
@@ -29,7 +30,8 @@ Once the work is finished, the result is sent back to the Event Loop, which then
 "version": "1.0.0"
 ```
 ### Rest APi
-- JSON format 
+Json format is restApi in simple way
+1. always respect all http method
 
 ### Middleware
 - client did get request then express server will send response 
@@ -53,4 +55,21 @@ Once the work is finished, the result is sent back to the Event Loop, which then
 ![alt text](image.png)
 
 ### Status Code
-1. information respone 
+1. informational responeses (100 - 199) 
+2. successful responeses (200 - 299) - means everythig is okay
+3. redirection messages (300 - 399) 
+4. client error responeses (400 - 499) 
+5. server error responeses (500 - 599) 
+
+### MongoDB
+- It's a dabase
+- no-sql Document Based Database
+- - there are two types of database one is sql which works in sequal way like on tables, and no-sql works with document based Database
+
+- Strong Support For aggregation Pipes
+
+- works on DSON format - like json
+- Best for node js application
+
+### Architecture
+- MongoDB has a collection and in collection it has document like in sql tables

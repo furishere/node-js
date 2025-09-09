@@ -1,1 +1,0 @@
-function now() { [native code] }: GET : /api/users/function now() { [native code] }: GET : /api/users/3function now() { [native code] }: GET : /api/users/3function now() { [native code] }: GET : /api/users/3
