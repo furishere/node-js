@@ -68,8 +68,25 @@ Json format is restApi in simple way
 
 - Strong Support For aggregation Pipes
 
-- works on DSON format - like json
+- works on BSON format - like json - store data in bson format
 - Best for node js application
 
 ### Architecture
 - MongoDB has a collection and in collection it has document like in sql tables
+- eg. Collection - "users"
+
+#### few commands
+- show dbs - show the all database
+- use <db_name> - switch to database
+- show collection, db.coll.find()
+
+#### Schema
+- in schema we define the structure,
+- using schema we make model,
+- using model we do CRUD structure
+
+### Model View Controller
+- Model - view - Controller
+- controller manipulate the model, and mmodel update the view
+- in this we make folders like controller, models, routes, maddleware
+- always make folders for production it's help us to make clean view
