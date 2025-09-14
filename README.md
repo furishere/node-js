@@ -90,3 +90,23 @@ Json format is restApi in simple way
 - controller manipulate the model, and mmodel update the view
 - in this we make folders like controller, models, routes, maddleware
 - always make folders for production it's help us to make clean view
+
+### server side rending
+-  we use ejs npm package for rending
+- ejs is just html file
+
+###  Authentication
+- there are two patterns
+1. statefull -  which maintains state or data on server side
+- - we made some account with username and password and server made some unique id for us in simple way login method password and username
+
+- - server can send unique id through -
+1. cookie
+2. respone
+3. headers 
+
+- <b> auth middleware will check cookies </b> then it will send ti server
+
+2. stateless - which has no state
+
+
